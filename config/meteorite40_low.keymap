@@ -6,6 +6,7 @@
 #include <behaviors/custom_config.dtsi>
 #include <behaviors/meteorite_custom_key.dtsi>
 #include <behaviors/meteorite_bt_os.dtsi>
+#include <behaviors/meteorite_mod_key.dtsi>
 #include <dt-bindings/zmk/custom_config.h>
 #include <dt-bindings/zmk/meteorite_custom_keys.h>
 #include <dt-bindings/zmk/meteorite_bt_os.h>
