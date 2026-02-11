@@ -26,7 +26,7 @@
             label = "BT0_WIN";
             #binding-cells = <0>;
             wait-ms = <10>;
-            bindings = <&bt BT_SEL 0>, <&bsl 0>;
+            bindings = <&bt BT_SEL 0>;
         };
 
         bt1_mac: bt1_mac {
@@ -34,7 +34,7 @@
             label = "BT1_MAC";
             #binding-cells = <0>;
             wait-ms = <10>;
-            bindings = <&bt BT_SEL 1>, <&bsl 3>;
+            bindings = <&bt BT_SEL 1>;
         };
 
 		swapper: swapper {
