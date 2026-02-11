@@ -37,7 +37,7 @@
             flavor = "tap-preferred";
             tapping-term-ms = <150>;
             bindings = <&mck>, <&kp>;
-            display-name = "meteorite mod-tap (OS key + key)";
+            display-name = "meteorite OS-Switch-mod-tap";
         };
 
         mck_mt_st: mck_mt_st {
@@ -46,7 +46,7 @@
             flavor = "tap-preferred";
             tapping-term-ms = <150>;
             bindings = <&mck>, <&mst>;
-            display-name = "meteorite mod-tap (OS key + smart toggle)";
+            display-name = "meteorite OS-Switch-mod-tap (smart toggle)";
         };
 
         alt_cmd_tab: alt_cmd_tab {
