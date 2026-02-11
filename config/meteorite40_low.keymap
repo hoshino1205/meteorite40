@@ -34,6 +34,14 @@
             bindings = <&mck>, <&kp>;
             display-name = "Mod-Tap (meteorite)";
         };
+
+        alt_cmd_tab: alt_cmd_tab {
+            compatible = "zmk,behavior-smart-toggle";
+            #binding-cells = <0>;
+            bindings = <&mck M_OS_ALT_CMD>, <&kp TAB>;
+            position-bindings = <12 13>; /* D, F */
+            position-binding-behaviors = <&kp LEFT>, <&kp RIGHT>;
+        };
     };
 
     combos {
