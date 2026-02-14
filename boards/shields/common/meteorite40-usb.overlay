@@ -1,4 +1,3 @@
-#if !defined(CONFIG_ZMK_USB_LOGGING) || !CONFIG_ZMK_USB_LOGGING
 &board_cdc_acm_uart {
     status = "disabled";
 };
@@ -6,6 +5,9 @@
 / {
     chosen {
         /delete-property/ zephyr,console;
+        /delete-property/ zephyr,shell-uart;
+        /delete-property/ zephyr,uart-mcumgr;
+        /delete-property/ zephyr,bt-mon-uart;
+        /delete-property/ zephyr,bt-c2h-uart;
     };
 };
-#endif
