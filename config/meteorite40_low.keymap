@@ -179,6 +179,48 @@
             bindings = <&kp LANGUAGE_2 &kp AT &kp AT &kp LEFT &kp LANGUAGE_1>;
             label = "ADDDOUBLEQUOTE";
         };
+
+        md_hash: md_hash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANG2 &kp LS(N3)>;
+            label = "MD_HASH";
+        };
+
+        md_checklist: md_checklist {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANG2 &kp MINUS &kp SPACE &kp RIGHT_BRACKET &kp SPACE &kp BACKSLASH &kp SPACE &kp LANG1>;
+            label = "MD_CHECKLIST";
+        };
+
+        md_link: md_link {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANG2 &kp RIGHT_BRACKET &kp BACKSLASH &kp LS(N8) &kp LS(N9) &kp LEFT &kp LEFT &kp LEFT>;
+            label = "MD_LINK";
+        };
+
+        md_slash: md_slash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANG2 &kp SLASH>;
+            label = "MD_SLASH";
+        };
+
+        md_listbullet: md_listbullet {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANG2 &kp MINUS &kp SPACE &kp LANG1>;
+            label = "MD_LISTBULLET";
+        };
+
+        md_listnum: md_listnum {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANG2 &kp N1 &kp DOT &kp SPACE &kp LANG1>;
+            label = "MD_LISTNUM";
+        };
     };
 
     behaviors {
@@ -275,10 +317,10 @@
         FUNC,MACRO {
             display-name = "FUNCTION";
             bindings = <
-&kp F1   &kp F2   &kp F3  &kp F4  &kp F5   &setphrase1     &setphrase2     &setphrase3     &setphrase4  &none
-&kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &kp LANGUAGE_2  &kp LANGUAGE_1  &addquotechar   &none        &none
-&kp F11  &kp F12  &none   &none   &none    &none           &none           &AddParenthsis  &AddBracket  &AddDoublequote  &none  &none
-&trans   &trans   &trans  &trans  &trans   &trans          &trans          &trans
+&kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &setphrase1     &setphrase2     &setphrase3    &setphrase4    &none
+&kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &kp LANGUAGE_2  &kp LANGUAGE_1  &addquotechar  &none          &none
+&kp F11  &kp F12  &none   &none   &none      &none           &none           &md_hash       &md_checklist  &md_link  &none  &none
+&trans   &trans   &trans  &trans  &md_slash  &md_listbullet  &md_listnum     &trans
             >;
         };
 
