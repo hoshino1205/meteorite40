@@ -197,7 +197,7 @@
         md_link: md_link {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANG2 &kp RIGHT_BRACKET &kp BACKSLASH &kp LS(N8) &kp H &kp T &kp T &kp P &kp S &kp COLON &kp FSLH &kp FSLH &kp LS(N9) &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT_ARROW &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT_ARROW &kp LEFT>;
+            bindings = <&kp LANG2 &kp RIGHT_BRACKET &kp BACKSLASH &kp LS(N8) &kp H &kp T &kp T &kp P &kp S &kp APOS &kp FSLH &kp FSLH &kp LS(N9) &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT_ARROW &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT_ARROW &kp LEFT>;
             label = "MD_LINK";
         };
 
