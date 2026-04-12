@@ -317,10 +317,10 @@
         FUNC,MACRO {
             display-name = "FUNCTION";
             bindings = <
-&kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &setphrase1     &setphrase2     &setphrase3    &setphrase4    &none
-&kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &kp LANGUAGE_2  &kp LANGUAGE_1  &addquotechar  &none          &none
-&kp F11  &kp F12  &none   &none   &none      &none           &none           &md_hash       &md_checklist  &md_link  &none  &none
-&trans   &trans   &trans  &trans  &md_slash  &md_listbullet  &md_listnum     &trans
+&kp F1   &kp F2   &kp F3  &kp F4  &kp F5   &setphrase1     &setphrase2     &setphrase3    &setphrase4    &none
+&kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &kp LANGUAGE_2  &kp LANGUAGE_1  &addquotechar  &none          &none
+&kp F11  &kp F12  &none   &none   &none    &none           &none           &md_hash       &md_checklist  &md_link  &none  &none
+&trans   &trans   &trans  &trans  &trans   &md_slash       &md_listbullet  &md_listnum
             >;
         };
 
